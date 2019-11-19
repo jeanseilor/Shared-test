@@ -1,0 +1,25 @@
+{
+	"extends": ["tslint:latest", "tslint-eslint-rules", "tslint-config-prettier"],
+	"linterOptions": {
+		"exclude": [
+			"node_modules/**/*",
+			"src/registerServiceWorker.js",
+			"src/**/*.test.ts"
+		]
+	},
+	"rules": {
+		"object-literal-sort-keys": false,
+		"ordered-imports": false,
+		"max-classes-per-file": false,
+		"no-console": true,
+		"interface-name": [true, "never-prefix"],
+		"prefer-object-spread": false,
+		"forin": false,
+		"no-submodule-imports": [true, "src", "redux-persist"],
+		"no-implicit-dependencies": false,
+		"array-type": [true, "generic"],
+		"no-angle-bracket-type-assertion": false,
+		"no-object-literal-type-assertion": false,
+		"no-var-requires": false
+	}
+}
